@@ -11,3 +11,4 @@ params = {
 }
 
 res = requests.get(URL, params)
+print(res.text)
