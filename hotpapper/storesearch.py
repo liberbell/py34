@@ -27,4 +27,4 @@ items = res['results']['shop']
 print(len(items))
 
 df = pd.DataFrame(items)
-print(df)
+print(df.columns)
