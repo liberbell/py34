@@ -14,3 +14,4 @@ body = {
 
 res = requests.get(url, body)
 print(res.status_code)
+print(res.json())
