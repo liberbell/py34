@@ -20,4 +20,4 @@ res = res.json()
 print(res['results']['shop'])
 
 
-print(json.dumps(res, indent=2))
+print(json.dumps(res, indent=2, ensure_ascii=False))
