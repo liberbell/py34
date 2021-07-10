@@ -1,4 +1,6 @@
+import json
 import requests
+import json
 
 URL = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/'
 
@@ -15,4 +17,4 @@ res = requests.get(URL, params)
 print(res.text)
 print(res.json())
 res = res.json()
-print(res['results'])
+print(res['results']['shop'])
