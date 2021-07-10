@@ -1,6 +1,6 @@
 import json
 import requests
-import json
+import pandas as pd
 
 URL = 'http://webservice.recruit.co.jp/hotpepper/gourmet/v1/'
 
@@ -11,7 +11,7 @@ params = {
     'key': API_key,
     'keyword': '神戸',
     'format': 'json',
-    'count': '20'
+    'count': 20,
 }
 
 res = requests.get(URL, params)
