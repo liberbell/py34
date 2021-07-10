@@ -14,3 +14,5 @@ params = {
 res = requests.get(URL, params)
 print(res.text)
 print(res.json())
+res = res.json()
+print(res['results'])
