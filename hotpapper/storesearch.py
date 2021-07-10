@@ -18,3 +18,6 @@ print(res.text)
 print(res.json())
 res = res.json()
 print(res['results']['shop'])
+
+
+print(json.dumps(res, indent=2))
