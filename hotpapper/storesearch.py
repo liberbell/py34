@@ -7,7 +7,8 @@ with open('key.txt') as f:
 
 params = {
     'key': API_key,
-    'keyword': '神戸'
+    'keyword': '神戸',
+    'format': 'json'
 }
 
 res = requests.get(URL, params)
