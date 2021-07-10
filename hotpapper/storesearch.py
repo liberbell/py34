@@ -21,3 +21,6 @@ print(res['results']['shop'])
 
 
 print(json.dumps(res, indent=2, ensure_ascii=False))
+
+items = res['results']['shop']
+print(len(items))
