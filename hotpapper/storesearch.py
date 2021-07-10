@@ -25,3 +25,6 @@ print(json.dumps(res, indent=2, ensure_ascii=False))
 
 items = res['results']['shop']
 print(len(items))
+
+df = pd.DataFrame(items)
+print(df)
