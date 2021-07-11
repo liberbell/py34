@@ -16,3 +16,5 @@ params = {
 
 res = requests.get(URL, params)
 print(res.status_code)
+
+print(json.dumps(res, indent=2, ensure_ascii=False))
