@@ -15,10 +15,11 @@ params = {
 }
 
 res = requests.get(URL, params)
-print(res.status_code)
+# print(res.status_code)
 
 res = res.json()
 # print(json.dumps(res, indent=2, ensure_ascii=False))
 
 items = res['Items']
-print(json.dumps(items, indent=2, ensure_ascii=False))
+# print(json.dumps(items, indent=2, ensure_ascii=False))
+print(len(items))
