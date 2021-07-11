@@ -23,3 +23,7 @@ res = res.json()
 items = res['Items']
 # print(json.dumps(items, indent=2, ensure_ascii=False))
 print(len(items))
+print(json.dumps(items[0], indent=2, ensure_ascii=False))
+
+pd = pd.DataFrame(items)
+print(pd)
