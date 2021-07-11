@@ -40,5 +40,5 @@ colums = ['itemCode', 'itemName', 'itemPrice', 'catchcopy', 'availability', 'ite
 
 print(df[colums])
 
-new_colums = ['商品コード', '商品名', '商品価格', 'キャッチコピー', '在庫', '商品URL', 'reviewAverage', 'reviewCount',
-       'pointRateEndTime', 'shopName', 'creditCardFlag', 'genreId', 'itemUrl']
+new_colums = ['商品コード', '商品名', '商品価格', 'キャッチコピー', '在庫', '商品URL', 'レビュー平均', 'レビュー数',
+       'ポイント終了日', 'テナント名', 'クレジットカード', '全般ID', '商品URL']
