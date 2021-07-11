@@ -35,7 +35,10 @@ df = pd.DataFrame(items)
 print(df[:3])
 print(df.columns)
 
-colums = ['catchcopy', 'availability', 'shopAffiliateUrl', 'itemCode', 'itemName', 'itemPrice', 'itemUrl', 'reviewAverage', 'reviewCount',
-       'postageFlag', 'pointRateEndTime', 'shopName', 'shopUrl', 'creditCardFlag', 'genreId', 'pointRateStartTime', 'itemUrl']
+colums = ['itemCode', 'itemName', 'itemPrice', 'catchcopy', 'availability', 'itemUrl', 'reviewAverage', 'reviewCount',
+       'pointRateEndTime', 'shopName', 'creditCardFlag', 'genreId', 'itemUrl']
 
 print(df[colums])
+
+new_colums = ['商品コード', '商品名', '商品価格', 'キャッチコピー', '在庫', '商品URL', 'reviewAverage', 'reviewCount',
+       'pointRateEndTime', 'shopName', 'creditCardFlag', 'genreId', 'itemUrl']
