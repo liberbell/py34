@@ -31,4 +31,6 @@ print(df.columns)
 
 print(df[['name', 'address', 'wifi']])
 df = df[['name', 'address', 'wifi']]
-print(df.head)
+print(df.head())
+
+df.to_csv('hot.csv', index=False)
