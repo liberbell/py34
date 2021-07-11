@@ -13,3 +13,6 @@ params = {
     'keyword': 'タブレット',
     'maxPrice': 20000,
 }
+
+res = requests.get(URL, params)
+print(res.status_code)
