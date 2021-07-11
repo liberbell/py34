@@ -33,3 +33,7 @@ print(items[1])
 
 df = pd.DataFrame(items)
 print(df[:3])
+print(df.columns)
+
+['catchcopy', 'availability', 'shopAffiliateUrl', 'itemCode', 'itemName', 'itemPrice', 'itemUrl', 'reviewAverage', 'reviewCount',
+       'postageFlag', 'pointRateEndTime', 'shopName', 'shopUrl', 'creditCardFlag', 'genreId', 'pointRateStartTime', 'itemUrl']
