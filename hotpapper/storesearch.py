@@ -29,4 +29,6 @@ print(len(items))
 df = pd.DataFrame(items)
 print(df.columns)
 
-print(df[['address', 'name', 'wifi']])
+print(df[['name', 'address', 'wifi']])
+df = df[['name', 'address', 'wifi']]
+print(df.head)
