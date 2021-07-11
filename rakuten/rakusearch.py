@@ -28,5 +28,5 @@ print(json.dumps(items[0], indent=2, ensure_ascii=False))
 # pd = pd.DataFrame(items)
 # print(pd[:3])
 
-items = [item['item'] for item in items]
+items = [item['Item'] for item in items]
 print(items[1])
