@@ -30,3 +30,6 @@ print(json.dumps(items[0], indent=2, ensure_ascii=False))
 
 items = [item['Item'] for item in items]
 print(items[1])
+
+df = pd.DataFrame(items)
+print(df[:3])
