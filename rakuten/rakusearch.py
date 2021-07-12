@@ -38,6 +38,7 @@ print(df.columns)
 colums = ['itemCode', 'itemName', 'itemPrice', 'catchcopy', 'availability', 'itemUrl', 'reviewAverage', 'reviewCount',
        'pointRateEndTime', 'shopName', 'creditCardFlag', 'genreId', 'itemUrl']
 
+df = df[colums]
 print(df[colums])
 
 new_colums = ['商品コード', '商品名', '商品価格', 'キャッチコピー', '在庫', '商品URL', 'レビュー平均', 'レビュー数',
