@@ -33,12 +33,15 @@ print(items[1])
 
 df = pd.DataFrame(items)
 print(df[:3])
-print(df.columns)
+# print(df.columns)
 
 colums = ['itemCode', 'itemName', 'itemPrice', 'catchcopy', 'availability', 'itemUrl', 'reviewAverage', 'reviewCount',
        'pointRateEndTime', 'shopName', 'creditCardFlag', 'genreId', 'itemUrl']
 
-print(df[colums])
+# print(df[colums])
 
 new_colums = ['商品コード', '商品名', '商品価格', 'キャッチコピー', '在庫', '商品URL', 'レビュー平均', 'レビュー数',
        'ポイント終了日', 'テナント名', 'クレジットカード', '全般ID', '商品URL']
+
+df.columns = new_colums
+print(df[:3])
