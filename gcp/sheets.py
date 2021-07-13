@@ -39,4 +39,4 @@ df = df.astype({"年齢": int, "社員ID": int})
 pvt_table = df.pivot_table(index=["所属"], values=["年齢"], aggfunc='mean')
 print(pvt_table)
 
-print(pvt_table["年齢", round])
+print(pvt_table["年齢"].round())
