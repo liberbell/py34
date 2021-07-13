@@ -26,3 +26,5 @@ print(worksheet)
 data = worksheet.get_all_values()
 # print(data, end=", ")
 
+df = pd.DataFrame(data[2:], columns=data[1])
+print(df)
