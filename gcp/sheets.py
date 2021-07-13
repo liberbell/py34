@@ -32,4 +32,4 @@ df = df.drop(df.columns[[0]], axis=1)
 # print(df.shape)
 # print(df)
 
-df.pivot_table(index=["所属"], values=["年齢"], aggfunc='mean')
+print(df.pivot_table(index=["所属"], values=["年齢"], aggfunc='mean'))
