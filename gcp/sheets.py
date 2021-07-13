@@ -40,3 +40,5 @@ pvt_table = df.pivot_table(index=["所属"], values=["年齢"], aggfunc='mean')
 print(pvt_table)
 
 pvt_table["年齢"] = pvt_table["年齢"].round()
+
+new_worksheet = sh.add_worksheet(title="new", rows=100, cols=100)
