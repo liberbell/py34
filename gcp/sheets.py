@@ -22,3 +22,5 @@ sh = gc.open_by_key(SP_SHEET_KEY)
 
 worksheet = sh.worksheet(SP_SHEET)
 print(worksheet)
+data = worksheet.get_all_values()
+print(data)
