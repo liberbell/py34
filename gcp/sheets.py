@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+import pandas as pd
 
 scopes = [
     'https://www.googleapis.com/auth/spreadsheets',
@@ -23,4 +24,5 @@ sh = gc.open_by_key(SP_SHEET_KEY)
 worksheet = sh.worksheet(SP_SHEET)
 print(worksheet)
 data = worksheet.get_all_values()
-print(data)
+# print(data, end=", ")
+
