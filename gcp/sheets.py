@@ -28,5 +28,5 @@ data = worksheet.get_all_values()
 
 df = pd.DataFrame(data[2:], columns=data[1])
 print(df.shape)
-df.drop(df.columns[[0]], axis=1)
+df = df.drop(df.columns[[0]], axis=1)
 print(df.shape)
