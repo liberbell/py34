@@ -53,4 +53,4 @@ print(df.dtypes)
 
 print(df.describe())
 
-print(df["レビュー数"])
+print(df[df["レビュー数"]> 20])
