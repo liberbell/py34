@@ -12,3 +12,4 @@ credentials = Credentials.from_service_account_file(
 )
 
 gc = gspread.authorize(credentials)
+print(gc)
