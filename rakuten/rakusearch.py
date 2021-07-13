@@ -47,3 +47,5 @@ new_colums = ['商品コード', '商品名', '商品価格', 'キャッチコ�
 df.columns = new_colums
 print(df[:3])
 print(df.dtypes)
+
+print(df.sort_values("商品価格", ascending=False))
