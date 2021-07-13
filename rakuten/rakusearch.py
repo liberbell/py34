@@ -52,3 +52,5 @@ print(df.dtypes)
 # print(df.sort_values("レビュー平均", ascending=False))
 
 print(df.describe())
+
+print(df["レビュー数"])
