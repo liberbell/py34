@@ -27,6 +27,9 @@ data = worksheet.get_all_values()
 # print(data, end=", ")
 
 df = pd.DataFrame(data[2:], columns=data[1])
-print(df.shape)
+# print(df.shape)
 df = df.drop(df.columns[[0]], axis=1)
-print(df.shape)
+# print(df.shape)
+# print(df)
+
+df.pivot_table(index=["所属"], values=["年齢"], aggfunc='mean')
