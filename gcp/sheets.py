@@ -1,5 +1,6 @@
 import gspread
 from gspread_dataframe import set_with_dataframe
+from gspread_formatting import *
 from google.oauth2.service_account import Credentials
 import pandas as pd
 
@@ -51,3 +52,8 @@ first_col = 2
 header_range = "B2:C2"
 index_range = "B3:B8"
 value_range = "C3:C8"
+
+CellFormat(
+    backgroundColor = color(38/255, 166/255, 154/255),
+    textFormat = textformat(bold=True, foregroundColor=color(255/255, 255/255, 255/255))
+)
