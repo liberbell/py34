@@ -53,7 +53,8 @@ header_range = "B2:C2"
 index_range = "B3:B8"
 value_range = "C3:C8"
 
-CellFormat(
+fmt = CellFormat(
     backgroundColor = color(38/255, 166/255, 154/255),
-    textFormat = textformat(bold=True, foregroundColor=color(255/255, 255/255, 255/255))
+    textFormat = textformat(bold=True, foregroundColor=color(255/255, 255/255, 255/255)),
+    horizontalAlignment = "CENTER",
 )
