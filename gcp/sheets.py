@@ -47,3 +47,7 @@ pvt_table["年齢"] = pvt_table["年齢"].round()
 first_row = 2
 first_col = 2
 # print(set_with_dataframe(new_worksheet, pvt_table.reset_index(), row=first_row, col=first_col))
+
+header_range = "B2:C2"
+index_range = "B3:B8"
+value_range = "C3:C8"
