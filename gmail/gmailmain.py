@@ -41,5 +41,5 @@ def main():
 
     service = build('gmail', 'v1', credentials=creds)
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()
