@@ -97,3 +97,6 @@ result_worksheet.format(header_range, {
       "bold": True
     }
 })
+
+border_fmt = Border("SOLID", Color(0, 0, 0, 0))
+fmt = CellFormat(borders=Borders(top=border_fmt, left=border_fmt, right=border_fmt, bottom=border_fmt))
