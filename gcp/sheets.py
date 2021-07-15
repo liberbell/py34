@@ -48,7 +48,7 @@ new_worksheet = sh.add_worksheet(title="new", rows=100, cols=100)
 
 first_row = 2
 first_col = 2
-# print(set_with_dataframe(new_worksheet, pvt_table.reset_index(), row=first_row, col=first_col))
+set_with_dataframe(new_worksheet, pvt_table.reset_index(), row=first_row, col=first_col)
 
 header_range = "B2:C2"
 index_range = "B3:B8"
