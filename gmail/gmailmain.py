@@ -10,8 +10,8 @@ SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 def create_message(sender, to, subject, message_text):
     message = MIMEText(message_text)
     message['to'] = to
-    message['from'] = "me"
-    message['subject'] = "today message"
+    message['from'] = sender
+    message['subject'] = subject
     return {'raw': base64.urlsafe_b64encode(message.as_string())}
 
 def send_message(service, user_id, message):
@@ -40,6 +40,13 @@ def main():
             token.write(creds.to_json())
 
     service = build('gmail', 'v1', credentials=creds)
+
+    sender = "liberbell@gmail.com"
+    to = "r0am889ujc@sute.jp"
+    subject = "test mail"
+    message_text = "This is test mail by gmail API."
+
+    message = create_message(sender, to, subject, message_text)
 
 # if __name__ == '__main__':
 #     main()
