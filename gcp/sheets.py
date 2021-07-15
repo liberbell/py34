@@ -98,7 +98,7 @@ result_worksheet.format(header_range, {
     }
 })
 
-border_fmt = Border("SOLID", Color(0, 0, 0, 0))
+border_fmt = Border("DOTTED", Color(0, 0, 0, 0))
 fmt = CellFormat(borders=Borders(top=border_fmt, left=border_fmt, right=border_fmt, bottom=border_fmt))
 format_cell_range(result_worksheet, header_range, fmt)
 format_cell_range(result_worksheet, index_range, fmt)
