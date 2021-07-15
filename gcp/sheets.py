@@ -46,9 +46,10 @@ pvt_table["年齢"] = pvt_table["年齢"].round()
 
 new_worksheet = sh.add_worksheet(title="new", rows=100, cols=100)
 
+
 first_row = 2
 first_col = 2
-set_with_dataframe(new_worksheet, pvt_table.reset_index(), row=first_row, col=first_col)
+# set_with_dataframe(new_worksheet, pvt_table.reset_index(), row=first_row, col=first_col)
 
 header_range = "B2:C2"
 index_range = "B3:B8"
@@ -78,7 +79,9 @@ value_range = "C3:C8"
 # )
 
 # format_cell_range(new_worksheet, header_range, header_fmt)
-new_worksheet.format(header_range, {
+result_worksheet = sh.worksheet("new")
+
+result_worksheet.format(header_range, {
     "backgroundColor": {
       "red": 38/255,
       "green": 166/255,
