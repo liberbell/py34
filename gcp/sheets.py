@@ -73,7 +73,9 @@ value_range = "C3:C8"
 # )
 header_fmt = CellFormat(
     backgroundColor = color(38/255, 166/255, 154/255),
+    textFormat = textFormat(bold=True, foregroundColor=color(255/255, 255/255, 255/255)),
     horizontalAlignment="CENTER"
 )
 
-format_cell_range(new_worksheet, header_range, header_fmt)
+# format_cell_range(new_worksheet, header_range, header_fmt)
+new_worksheet.format(header_range, header_fmt)
