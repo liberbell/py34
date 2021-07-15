@@ -44,7 +44,7 @@ print(pvt_table)
 
 pvt_table["年齢"] = pvt_table["年齢"].round()
 
-new_worksheet = sh.add_worksheet(title="new", rows=100, cols=100)
+# new_worksheet = sh.add_worksheet(title="new", rows=100, cols=100)
 
 
 first_row = 2
