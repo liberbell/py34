@@ -55,7 +55,7 @@ index_range = "B3:B8"
 value_range = "C3:C8"
 
 header_fmt = CellFormat(
-    "backgroundColor" : {
+    "backgroundColor": {
         "red": 0.0,
         "green": 0.0,
         "blue": 0.0
