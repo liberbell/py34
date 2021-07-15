@@ -55,9 +55,21 @@ index_range = "B3:B8"
 value_range = "C3:C8"
 
 header_fmt = CellFormat(
-    backgroundColor = color(38/255, 166/255, 154/255),
-    textFormat = textFormat(bold=True, foregroundColor=color(255/255, 255/255, 255/255)),
-    horizontalAlignment = "CENTER",
+    "backgroundColor" : {
+        "red": 0.0,
+        "green": 0.0,
+        "blue": 0.0
+    },
+    "horizontalAlignment": "CENTER",
+    # textFormat = textFormat(bold=True, foregroundColor=color(255/255, 255/255, 255/255)),
+    "textFormat" : {
+        "foregroundColor" : {
+            "red": 1,
+            "green" : 1,
+            "blue" : 1
+        }
+        "bold" : True
+    }
 )
 
 format_cell_range(new_worksheet, header_range, header_fmt)
