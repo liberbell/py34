@@ -5,6 +5,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from email.mime.text import MIMEText
+import base64
 
 # SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
