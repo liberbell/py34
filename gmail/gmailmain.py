@@ -10,10 +10,10 @@ import base64
 # SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 SCOPES = ["https://www.googleapis.com/auth/gmail.send"]
 
-# subscribers = [
-#     "sehihide@uma3.be"
-#     "kl6ew009hw@sute.jp"
-# ]
+subscribers = [
+    "sehihide@uma3.be",
+    "kl6ew009hw@sute.jp"
+]
 
 def create_message(sender, to, subject, message_text):
     message = MIMEText(message_text)
