@@ -55,7 +55,7 @@ def main():
 
     # for to in subscribers:
     for num in range(subscribers):
-        to = subscribers[num]
+        to = subscribers[num-1]
     # to = subscribers[0]
 
         message = create_message(sender, to, subject, message_text)
