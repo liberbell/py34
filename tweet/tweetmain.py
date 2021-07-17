@@ -18,4 +18,6 @@ api = tweepy.API(auth)
 # print(api)
 
 public_tweets = api.home_timeline()
-print(public_tweets)
+# print(public_tweets)
+for tweet in public_tweets:
+    print(tweet.text)
