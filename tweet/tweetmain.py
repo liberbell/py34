@@ -23,5 +23,5 @@ api = tweepy.API(auth)
 # for tweet in public_tweets:
 #     print(tweet.text)
 
-me = API.me()
+me = api.me()
 print(me)
