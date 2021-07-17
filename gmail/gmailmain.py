@@ -54,7 +54,7 @@ def main():
     message_text = "This is test mail by gmail API."
 
     # for to in subscribers:
-    for num in range(subscribers):
+    for num in range(len(subscribers)):
         to = subscribers[num-1]
     # to = subscribers[0]
 
