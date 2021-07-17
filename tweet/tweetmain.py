@@ -1,5 +1,6 @@
 import json
 import tweepy
+from tweepy.api import API
 
 with open('secret.json') as f:
     twitter_keys = json.load(f)
@@ -17,7 +18,10 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 # print(api)
 
-public_tweets = api.home_timeline()
+# public_tweets = api.home_timeline()
 # print(public_tweets)
-for tweet in public_tweets:
-    print(tweet.text)
+# for tweet in public_tweets:
+#     print(tweet.text)
+
+me = API.me()
+print(me)
