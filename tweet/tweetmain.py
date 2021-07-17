@@ -1,6 +1,7 @@
 import json
+import tweepy
 
 with open('secret.json') as f:
     twitter_keys = json.load(f)
 
-print(twitter_keys)
+tweepy.OAuthHandler(consumer_key, onsumer_secret)
