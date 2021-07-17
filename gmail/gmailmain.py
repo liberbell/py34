@@ -56,8 +56,8 @@ def main():
     for to in subscribers:
     # to = subscribers[0]
 
-    message = create_message(sender, to, subject, message_text)
-    send_message(service, "me", message)
+        message = create_message(sender, to, subject, message_text)
+        send_message(service, "me", message)
 
 if __name__ == '__main__':
     main()
