@@ -53,7 +53,9 @@ def main():
     subject = "test mail"
     message_text = "This is test mail by gmail API."
 
-    for to in subscribers:
+    # for to in subscribers:
+    for num in range(subscribers):
+        to = subscribers[num]
     # to = subscribers[0]
 
         message = create_message(sender, to, subject, message_text)
