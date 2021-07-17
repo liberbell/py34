@@ -1,12 +1,6 @@
+import json
 
-with open('api_key.txt') as f:
-    API_key = f.readline()
+with open('secret.json') as f:
+    twitter_keys = json.load(f)
 
-with open('secret.txt') as f:
-    API_secret = f.readline()
-
-with open('atoken.txt') as f:
-    access_token = f.readline()
-
-with open('atokensecret.txt') as f:
-    access_token_secret = f.readline()
+print(twitter_keys)
