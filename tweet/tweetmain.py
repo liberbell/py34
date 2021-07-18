@@ -27,3 +27,6 @@ me = api.me()
 print(me.followers_count)
 print(me.friends_count)
 print(me.followers)
+
+get_user01 = api.get_user("@yousuck2020")
+print(get_user01.followers_count)
