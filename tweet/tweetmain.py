@@ -33,7 +33,7 @@ me = api.me()
 # print(get_user01.followers_count)
 # print(get_user01.entities)
 
-api.update_status("Unique Post JDLKLKJLEE")
+# api.update_status("Unique Post JDLKLKJLEE")
 # api.update_with_media(status="This message is test with file from API.", filename="sample2.jpg")
 
 posts_01 = api.search(q="JDLKLKJLEE", count=50)
