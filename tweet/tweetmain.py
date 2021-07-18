@@ -34,4 +34,4 @@ me = api.me()
 # print(get_user01.entities)
 
 api.update_status("This message is test from API.")
-api.update_with_media(status="This message is test with file from API.", filename="sample.jpg")
+api.update_with_media(status="This message is test with file from API.", filename="sample2.jpg")
