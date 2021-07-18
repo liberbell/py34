@@ -24,4 +24,4 @@ api = tweepy.API(auth)
 #     print(tweet.text)
 
 me = api.me()
-print(me)
+print(me.description)
