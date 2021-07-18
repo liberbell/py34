@@ -24,4 +24,5 @@ api = tweepy.API(auth)
 #     print(tweet.text)
 
 me = api.me()
-print(me.description)
+print(me.followers_count)
+print(me.friends_count)
