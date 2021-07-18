@@ -37,4 +37,5 @@ api.update_status("Unique Post JDLKLKJLEE")
 # api.update_with_media(status="This message is test with file from API.", filename="sample2.jpg")
 
 posts_01 = api.search(q="JDLKLKJLEE", count=50)
-print(posts_01)
+print(len(posts_01))
+# print(posts_01.count)
