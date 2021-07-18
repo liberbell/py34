@@ -42,6 +42,5 @@ print(len(posts_01))
 # print(posts_01.count)
 
 for post in posts_01:
-    post = posts_01[0]
     tweet_id = post.id
     api.create_favorite(tweet_id)
