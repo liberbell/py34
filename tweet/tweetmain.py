@@ -28,6 +28,8 @@ me = api.me()
 # print(me.friends_count)
 # print(me.followers)
 
-get_user01 = api.get_user("@yousuck2020")
+# get_user01 = api.get_user("@yousuck2020")
 # print(get_user01.followers_count)
-print(get_user01.entities)
+# print(get_user01.entities)
+
+api.update_status("This message is test from API.")
