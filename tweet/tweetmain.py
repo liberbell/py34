@@ -1,6 +1,7 @@
 import json
 import tweepy
 from tweepy.api import API
+from tweepy.models import Status
 
 with open('secret.json') as f:
     twitter_keys = json.load(f)
@@ -33,3 +34,4 @@ me = api.me()
 # print(get_user01.entities)
 
 api.update_status("This message is test from API.")
+api.update_with_media(status="This message is test with file from API.", filename=sample.jpg)
