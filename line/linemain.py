@@ -5,7 +5,7 @@ import json
 
 def notify_message(message):
     URL = "https://notify-api.line.me/api/notify"
-    
+
     with open("secret.txt") as f:
         line_token = json.load(f)
 
@@ -24,3 +24,6 @@ def notify_message(message):
         headers=headers,
         data=data
     )
+
+    message = "Message with function."
+    notify_message()
