@@ -19,3 +19,9 @@ headers = {
 data = {
     "message": message
 }
+
+requests.post(
+    URL,
+    headers=headers,
+    data=data
+)
