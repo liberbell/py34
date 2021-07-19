@@ -29,11 +29,14 @@ def notify_message(message):
 with open('secret.json') as f:
     twitter_keys = json.load(f)
 
+print("log1")
+
 def get_n_followers():
     consumer_key = twitter_keys["consumer_key"]
     consumer_secret = twitter_keys["consumer_secret"]
     access_token = twitter_keys["access_token"]
     access_token_secret = twitter_keys["access_token_secret"]
+    print("log2")
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
@@ -41,6 +44,7 @@ def get_n_followers():
 
     me = api.me()
     n_followers = me.followers_count
+    print("log3")
 
     return n_followers
 
