@@ -29,18 +29,19 @@ def notify_message(message):
 with open('secret.json') as f:
     twitter_keys = json.load(f)
 
-consumer_key = twitter_keys["consumer_key"]
-consumer_secret = twitter_keys["consumer_secret"]
-access_token = twitter_keys["access_token"]
-access_token_secret = twitter_keys["access_token_secret"]
+def get_n_followers():
+    consumer_key = twitter_keys["consumer_key"]
+    consumer_secret = twitter_keys["consumer_secret"]
+    access_token = twitter_keys["access_token"]
+    access_token_secret = twitter_keys["access_token_secret"]
 
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
+    auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+    auth.set_access_token(access_token, access_token_secret)
+    api = tweepy.API(auth)
 
-m = api.me()
-n_followers = m.followers_count
-# print(n_followers)
+    m = api.me()
+    n_followers = m.followers_count
+    return n_followers
 
 message = f"Today's followers are {n_followers}."
 
