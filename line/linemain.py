@@ -25,5 +25,13 @@ def notify_message(message):
         data=data
     )
 
+with open('secret.json') as f:
+    twitter_keys = json.load(f)
+
+consumer_key = twitter_keys["consumer_key"]
+consumer_secret = twitter_keys["consumer_secret"]
+access_token = twitter_keys["access_token"]
+access_token_secret = twitter_keys["access_token_secret"]
+
 message = "Message with function."
 notify_message(message)
