@@ -40,8 +40,9 @@ api = tweepy.API(auth)
 
 m = api.me()
 n_followers = m.followers_count
-print(n_followers)
+# print(n_followers)
 
-# message = "Message with function."
-# notify_message(message)
+message = "Today's followers are {n_followers}."
+
+notify_message(message)
 
