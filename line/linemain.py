@@ -15,3 +15,7 @@ message = "This is a message from python."
 headers = {
     "Authorization": f'Bearer {LINE_NOTFY_TOKEN}'
 }
+
+data = {
+    "message": message
+}
