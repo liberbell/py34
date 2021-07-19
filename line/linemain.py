@@ -39,8 +39,9 @@ def get_n_followers():
     auth.set_access_token(access_token, access_token_secret)
     api = tweepy.API(auth)
 
-    m = api.me()
-    n_followers = m.followers_count
+    me = api.me()
+    n_followers = me.followers_count
+
     return n_followers
 
 print(get_n_followers())
