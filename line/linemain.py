@@ -39,7 +39,9 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 
 m = api.me()
+n_followers = m.followers_count
+print(n_followers)
 
-message = "Message with function."
-notify_message(message)
+# message = "Message with function."
+# notify_message(message)
 
