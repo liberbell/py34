@@ -25,5 +25,5 @@ def notify_message(message):
         data=data
     )
 
-    message = "Message with function."
-    notify_message(message)
+message = "Message with function."
+notify_message(message)
