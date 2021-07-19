@@ -43,7 +43,9 @@ def get_n_followers():
     n_followers = m.followers_count
     return n_followers
 
-message = f"Today's followers are {n_followers}."
+print(get_n_followers())
+# message = f"Today's followers are {n_followers}."
 
-notify_message(message)
+
+# notify_message(message)
 
