@@ -9,3 +9,9 @@ with open("secret.txt") as f:
 # print(line_token)
 
 LINE_NOTFY_TOKEN = line_token["LINE_NOTFY_TOKEN"]
+
+message = "This is a message from python."
+
+headers = {
+    "Authorization": f'Bearer {LINE_NOTFY_TOKEN}'
+}
