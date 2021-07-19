@@ -42,7 +42,7 @@ m = api.me()
 n_followers = m.followers_count
 # print(n_followers)
 
-message = "Today's followers are {n_followers}."
+message = f"Today's followers are {n_followers}."
 
 notify_message(message)
 
