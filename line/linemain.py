@@ -1,5 +1,6 @@
 import requests
 import json
+import tweepy
 
 # print(line_token)
 
@@ -33,5 +34,12 @@ consumer_secret = twitter_keys["consumer_secret"]
 access_token = twitter_keys["access_token"]
 access_token_secret = twitter_keys["access_token_secret"]
 
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_token_secret)
+api = tweepy.API(auth)
+
+m = api.me()
+
 message = "Message with function."
 notify_message(message)
+
