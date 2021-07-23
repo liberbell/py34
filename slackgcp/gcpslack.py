@@ -1,5 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from gspread.models import Worksheet
 
 def auth():
     scopes = [
@@ -19,3 +20,6 @@ def auth():
 
     worksheet = gc.open_by_key(SP_SHEET_KEY).worksheet(SP_SHEET)
     return worksheet
+
+worksheet = auth()
+print(worksheet)
