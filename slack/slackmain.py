@@ -14,6 +14,6 @@ def respond(message):
 @listen_to("game")
 
 def linsten(message):
-    message.send("This is not drill.")
+    message.reply("This is not drill.")
 
 bot.run()
