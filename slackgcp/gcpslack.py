@@ -1,6 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from gspread.models import Worksheet
+import pandas as pd
 
 def auth():
     scopes = [
@@ -22,4 +23,6 @@ def auth():
     return worksheet
 
 worksheet = auth()
-print(worksheet)
+
+df = pd.DataFrame(worksheet.get_all_records())
+print(df)
