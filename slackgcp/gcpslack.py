@@ -29,4 +29,5 @@ df = pd.DataFrame(worksheet.get_all_records())
 # print(df)
 
 timestamp = datetime.now()
-print(timestamp.strftime("%Y/%m/%d"))
+date = timestamp.strftime("%Y/%m/%d")
+time = timestamp.strftime("%H:%M")
