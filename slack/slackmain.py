@@ -9,6 +9,6 @@ bot = Bot()
 @respond_to('practice')
 
 def sample(message):
-    message.send("This is a practie.")
+    message.send("This is a practie right?")
 
 bot.run()
