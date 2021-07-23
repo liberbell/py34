@@ -8,7 +8,12 @@ bot = Bot()
 # bot.run()
 @respond_to('practice')
 
-def sample(message):
+def respond(message):
     message.send("This is a practie right?")
+
+@listen_to("game")
+
+def linsten(message):
+    message.send("This is not drill.")
 
 bot.run()
