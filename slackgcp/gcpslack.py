@@ -15,3 +15,7 @@ credentials = Credentials.from_service_account_file(
 )
 
 gc = gspread.authorize(credentials)
+# print(gc)
+
+SP_SHEET_KEY = '14240_Sv7TzeZVxBi42BtK6ZMtaRK82fYqvOqvR1js4s'
+SP_SHEET = 'timesheet'
