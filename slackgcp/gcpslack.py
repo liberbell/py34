@@ -2,6 +2,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 from gspread.models import Worksheet
 import pandas as pd
+from datetime import datetime
 
 def auth():
     scopes = [
@@ -25,4 +26,7 @@ def auth():
 worksheet = auth()
 
 df = pd.DataFrame(worksheet.get_all_records())
-print(df)
+# print(df)
+
+timestamp = datetime.now()
+print(timestamp.strftime("%Y/%m/%d"))
