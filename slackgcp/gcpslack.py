@@ -13,3 +13,5 @@ credentials = Credentials.from_service_account_file(
     'gcp_secret.json',
     scopes=scopes
 )
+
+gc = gspread.authorize(credentials)
