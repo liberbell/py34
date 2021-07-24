@@ -58,6 +58,9 @@ def start_time():
     worksheet.update([df.columns.tolist()] + df.values.tolist())
 
 def out_time():
+    worksheet = auth()
+    df = pd.DataFrame(worksheet.get_all_records())
+    
     timestamp = datetime.now()
     o_time = timestamp.strftime("%H:%M")
 
