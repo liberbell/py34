@@ -41,6 +41,7 @@ def start_time():
 
     worksheet.update([df.columns.tolist()] + df.values.tolist())
     print("start time regist done.")
+    print("Start time is registerd. Work hard!!!")
 
 @respond_to("beer")
 def out_time():
@@ -49,8 +50,10 @@ def out_time():
 
     timestamp = datetime.now()
     o_time = timestamp.strftime("%H:%M")
+    print("out time is{o_time}. Really?")
 
     df.iloc[-1, 2] = o_time
     worksheet.update([df.columns.tolist()] + df.values.tolist())
     print("out time regist done.")
+    print("Out time is registerd. Get out here.")
 
