@@ -60,9 +60,13 @@ def start_time():
 def out_time():
     worksheet = auth()
     df = pd.DataFrame(worksheet.get_all_records())
-    
+
     timestamp = datetime.now()
     o_time = timestamp.strftime("%H:%M")
 
     df.iloc[-1, 2] = o_time
     worksheet.update([df.columns.tolist()] + df.values.tolist())
+
+auth()
+start_time()
+out_time()
