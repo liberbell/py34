@@ -1,3 +1,4 @@
+from os import times
 import gspread
 from google.oauth2.service_account import Credentials
 from gspread.models import Worksheet
@@ -36,3 +37,9 @@ df = df.append({'date': date, 'start time': p_time, 'out time': '00:00'}, ignore
 # print(df)
 
 worksheet.update([df.columns.tolist()] + df.values.tolist())
+
+timestamp = datetime.now()
+o_time = timestamp.strftime("%H:%M")
+
+# df.iloc[-1. 2] = o_time
+df.iloc[-1, 2] = o_time
