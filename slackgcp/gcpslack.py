@@ -57,3 +57,5 @@ def out_time():
     print("out time regist done.")
     print("Out time is registerd. Get out here.")
 
+bot = Bot()
+bot.run()
