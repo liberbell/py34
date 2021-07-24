@@ -29,7 +29,7 @@ def auth():
     return worksheet
 
 @respond_to("work start")
-def start_time():
+def start_time(message):
     worksheet = auth()
     df = pd.DataFrame(worksheet.get_all_records())
 
@@ -44,7 +44,7 @@ def start_time():
     print("Start time is registerd. Work hard!!!")
 
 @respond_to("beer")
-def out_time():
+def out_time(message):
     worksheet = auth()
     df = pd.DataFrame(worksheet.get_all_records())
 
