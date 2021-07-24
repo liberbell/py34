@@ -32,5 +32,5 @@ timestamp = datetime.now()
 date = timestamp.strftime("%Y/%m/%d")
 p_time = timestamp.strftime("%H:%M")
 
-df.append({"日時": date, "開始時間": p_time, "終了時間": "00:00"}, ignore_index=True)
+df.append({'日時': date, '開始時間': p_time, '終了時間': '00:00'}, ignore_index=True)
 print(df)
