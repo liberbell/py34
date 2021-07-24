@@ -42,9 +42,9 @@ def auth():
 # o_time = timestamp.strftime("%H:%M")
 
 # df.iloc[-1. 2] = o_time
-df.iloc[-1, 2] = o_time
+# df.iloc[-1, 2] = o_time
 
-worksheet.update([df.columns.tolist()] + df.values.tolist())
+# worksheet.update([df.columns.tolist()] + df.values.tolist())
 
 def start_time():
     worksheet = auth()
@@ -53,6 +53,7 @@ def start_time():
     timestamp = datetime.now()
     date = timestamp.strftime('%Y/%m/%d')
     p_time = timestamp.strftime('%H:%M')
+    df = df.append({'date': date, 'start time': p_time, 'out time': '00:00'}, ignore_index=True)
 
     worksheet.update([df.columns.tolist()] + df.values.tolist())
 
