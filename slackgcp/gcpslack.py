@@ -26,11 +26,13 @@ def auth():
 worksheet = auth()
 
 df = pd.DataFrame(worksheet.get_all_records())
-print(df)
+# print(df)
 
 timestamp = datetime.now()
 date = timestamp.strftime('%Y/%m/%d')
 p_time = timestamp.strftime('%H:%M')
 
 df = df.append({'date': date, 'start time': p_time, 'out time': '00:00'}, ignore_index=True)
-print(df)
+# print(df)
+
+worksheet.update([df.columns.tolist()] + df.values.tolist())
