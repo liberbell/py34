@@ -43,3 +43,5 @@ o_time = timestamp.strftime("%H:%M")
 
 # df.iloc[-1. 2] = o_time
 df.iloc[-1, 2] = o_time
+
+worksheet.update([df.columns.tolist()] + df.values.tolist())
