@@ -56,6 +56,7 @@ def start_time():
     df = df.append({'date': date, 'start time': p_time, 'out time': '00:00'}, ignore_index=True)
 
     worksheet.update([df.columns.tolist()] + df.values.tolist())
+    print("start time regist done.")
 
 def out_time():
     worksheet = auth()
@@ -66,6 +67,7 @@ def out_time():
 
     df.iloc[-1, 2] = o_time
     worksheet.update([df.columns.tolist()] + df.values.tolist())
+    print("out time regist done.")
 
 auth()
 start_time()
