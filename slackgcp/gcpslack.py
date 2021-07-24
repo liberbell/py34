@@ -36,12 +36,12 @@ def start_time(message):
     timestamp = datetime.now()
     date = timestamp.strftime('%Y/%m/%d')
     p_time = timestamp.strftime('%H:%M')
-    print("Start time is{p_time}. Work hard.")
+    message.send("Start time is{p_time}. Work hard.")
     df = df.append({'date': date, 'start time': p_time, 'out time': '00:00'}, ignore_index=True)
 
     worksheet.update([df.columns.tolist()] + df.values.tolist())
     print("start time regist done.")
-    print("Start time is registerd. Work hard!!!")
+    message.send("Start time is registerd. Work hard!!!")
 
 @respond_to("beer")
 def out_time(message):
