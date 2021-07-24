@@ -5,6 +5,10 @@ from gspread.models import Worksheet
 import pandas as pd
 from datetime import datetime
 
+from slackbot.bot import Bot
+from slackbot.bot import respond_to
+from slackbot.bot import listen_to
+
 def auth():
     scopes = [
         'https://www.googleapis.com/auth/spreadsheets',
@@ -24,28 +28,7 @@ def auth():
     worksheet = gc.open_by_key(SP_SHEET_KEY).worksheet(SP_SHEET)
     return worksheet
 
-# worksheet = auth()
-
-# df = pd.DataFrame(worksheet.get_all_records())
-# # print(df)
-
-# timestamp = datetime.now()
-# date = timestamp.strftime('%Y/%m/%d')
-# p_time = timestamp.strftime('%H:%M')
-
-# df = df.append({'date': date, 'start time': p_time, 'out time': '00:00'}, ignore_index=True)
-# # print(df)
-
-# worksheet.update([df.columns.tolist()] + df.values.tolist())
-
-# timestamp = datetime.now()
-# o_time = timestamp.strftime("%H:%M")
-
-# df.iloc[-1. 2] = o_time
-# df.iloc[-1, 2] = o_time
-
-# worksheet.update([df.columns.tolist()] + df.values.tolist())
-
+@respond_to("work start")
 def start_time():
     worksheet = auth()
     df = pd.DataFrame(worksheet.get_all_records())
@@ -58,6 +41,7 @@ def start_time():
     worksheet.update([df.columns.tolist()] + df.values.tolist())
     print("start time regist done.")
 
+@respond_to("beer")
 def out_time():
     worksheet = auth()
     df = pd.DataFrame(worksheet.get_all_records())
