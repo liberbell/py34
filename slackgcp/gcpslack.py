@@ -33,3 +33,4 @@ date = timestamp.strftime("%Y/%m/%d")
 p_time = timestamp.strftime("%H:%M")
 
 df.append({"date": date, "start time": p_time, "out time": "00:00"}, ignore_index=True)
+print(df)
