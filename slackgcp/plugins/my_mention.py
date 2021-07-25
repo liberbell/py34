@@ -13,7 +13,7 @@ def auth():
     ]
 
     credentials = Credentials.from_service_account_file(
-        'gcp_secret.json',
+        'plugins/gcp_secret.json',
         scopes=scopes
     )
 
