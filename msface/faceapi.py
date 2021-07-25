@@ -20,17 +20,14 @@ KEY = face_api_key["key"]
 ENDPOINT = face_api_key["URL"]
 
 face_client = FaceClient(ENDPOINT, CognitiveServicesCredentials(KEY))
-# print(face_client)
 
-# Detect a face in an image that contains a single face
 single_face_image_url = 'https://raw.githubusercontent.com/Microsoft/Cognitive-Face-Windows/master/Data/detection1.jpg'
 single_image_name = os.path.basename(single_face_image_url)
-# We use detection model 3 to get better performance.
+
 detected_faces = face_client.face.detect_with_url(url=single_face_image_url, detection_model='detection_03')
 if not detected_faces:
     raise Exception('No face detected from image {}'.format(single_image_name))
 
-# Convert width height to a point in a rectangle
 def getRectangle(faceDictionary):
     rect = faceDictionary.face_rectangle
     left = rect.left
