@@ -20,3 +20,4 @@ KEY = face_api_key["key"]
 ENDPOINT = face_api_key["URL"]
 
 faceclient = FaceClient(ENDPOINT, CognitiveServicesCredentials(KEY))
+print(faceclient)
