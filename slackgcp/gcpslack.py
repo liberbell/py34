@@ -36,7 +36,7 @@ def start_time(message):
     timestamp = datetime.now()
     date = timestamp.strftime('%Y/%m/%d')
     p_time = timestamp.strftime('%H:%M')
-    message.send(f"Start time is{p_time}. Work hard.")
+    message.send(f"Start time is {p_time}. Work hard.")
     df = df.append({'date': date, 'start time': p_time, 'out time': '00:00'}, ignore_index=True)
 
     worksheet.update([df.columns.tolist()] + df.values.tolist())
@@ -50,7 +50,7 @@ def out_time(message):
 
     timestamp = datetime.now()
     o_time = timestamp.strftime("%H:%M")
-    message.send(f"out time is{o_time}. Really?")
+    message.send(f"out time is {o_time}. Really?")
 
     df.iloc[-1, 2] = o_time
     worksheet.update([df.columns.tolist()] + df.values.tolist())
