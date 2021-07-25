@@ -50,12 +50,12 @@ def out_time(message):
 
     timestamp = datetime.now()
     o_time = timestamp.strftime("%H:%M")
-    print("out time is{o_time}. Really?")
+    message.send("out time is{o_time}. Really?")
 
     df.iloc[-1, 2] = o_time
     worksheet.update([df.columns.tolist()] + df.values.tolist())
     print("out time regist done.")
-    print("Out time is registerd. Get out here.")
+    message.send("Out time is registerd. Get out here.")
 
 bot = Bot()
 bot.run()
