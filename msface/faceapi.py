@@ -18,3 +18,8 @@ with open("faceapi_secret.json") as f:
     face_api_key = json.load(f)
 
 KEY = face_api_key["key"]
+
+with open("faceapi_end.json") as f:
+    url = json.load(f)
+
+ENDPOINT = url["URL"]
