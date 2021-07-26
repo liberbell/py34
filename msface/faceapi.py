@@ -41,8 +41,7 @@ def getRectangle(faceDictionary):
     
     return ((left, top), (right, bottom))
 
-response = requests.get(image)
-img = Image.open(BytesIO(response.content))
+img = Image.open("single.jpg")
 print('Drawing rectangle around face... see popup for results.')
 draw = ImageDraw.Draw(img)
 for face in detected_faces:
