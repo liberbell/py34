@@ -25,7 +25,7 @@ single_face_image_url = 'https://raw.githubusercontent.com/Microsoft/Cognitive-F
 single_image_name = os.path.basename(single_face_image_url)
 # detected_faces = face_client.face.detect_with_url(url=single_face_image_url, detection_model='detection_03')
 
-image = Image.open("single.jpg")
+image = open("single.jpg", "rb")
 # single_image_name = os.path.basename(image)
 detected_faces = face_client.face.detect_with_stream(image, detection_model='detection_03')
 
