@@ -42,6 +42,6 @@ img = Image.open(BytesIO(response.content))
 print('Drawing rectangle around face... see popup for results.')
 draw = ImageDraw.Draw(img)
 for face in detected_faces:
-    draw.rectangle(getRectangle(face), outline='red')
+    draw.rectangle(getRectangle(face), outline='green')
 
 img.show()
