@@ -16,7 +16,7 @@ audio = speech.RecognitionAudio(content=wav_data)
 
 config = speech.RecognitionConfig(
     encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-    sample_rate_hertz=16000,
+    sample_rate_hertz=8000,
     language_code="en-US",
 )
 
