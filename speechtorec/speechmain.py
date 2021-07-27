@@ -4,7 +4,7 @@ from google.cloud import speech
 from pydub import AudioSegment
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "speech_secret.json"
-wav_file = "japanese.wav"
+wav_file = "english.wav"
 
 # Instantiates a client
 client = speech.SpeechClient()
