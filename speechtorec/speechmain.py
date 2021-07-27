@@ -15,20 +15,20 @@ with io.open(wav_file, "rb") as f:
     wav_data = f.read()
 
 sourceAudio = AudioSegment.from_file(wav_file)
-print(sourceAudio.frame_rate)
+rates = sourceAudio.frame_rate
 
 
-# audio = speech.RecognitionAudio(content=wav_data)
+audio = speech.RecognitionAudio(content=wav_data)
 
-# config = speech.RecognitionConfig(
-#     encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-#     sample_rate_hertz=16000,
-#     language_code="ja-JP",
-# )
+config = speech.RecognitionConfig(
+    encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
+    sample_rate_hertz=rates,
+    language_code="ja-JP",
+)
 
-# # Detects speech in the audio file
-# response = client.recognize(config=config, audio=audio)
-# print(response)
+# Detects speech in the audio file
+response = client.recognize(config=config, audio=audio)
+print(response)
 
-# for result in response.results:
-#     print("Transcript: {}".format(result.alternatives[0].transcript))
+for result in response.results:
+    print("Transcript: {}".format(result.alternatives[0].transcript))
