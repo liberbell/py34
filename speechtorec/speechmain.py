@@ -1,4 +1,5 @@
 import os
+import io
 from google.cloud import speech
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "speech_secret.json"
@@ -7,7 +8,7 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "speech_secret.json"
 client = speech.SpeechClient()
 
 # The name of the audio file to transcribe
-gcs_uri = "gs://cloud-samples-data/speech/brooklyn_bridge.raw"
+# gcs_uri = "gs://cloud-samples-data/speech/brooklyn_bridge.raw"
 with io.open("english.wav", "rb") as f:
     wav_data = f.read()
 
