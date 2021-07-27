@@ -14,7 +14,7 @@ client = speech.SpeechClient()
 with io.open(wav_file, "rb") as f:
     wav_data = f.read()
 
-sourceAudio = AudioSegment.from_mp3(wav_file)
+sourceAudio = AudioSegment.from_file(wav_file)
 print(sourceAudio.frame_rate)
 
 
