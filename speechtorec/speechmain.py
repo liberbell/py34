@@ -9,7 +9,7 @@ client = speech.SpeechClient()
 
 # The name of the audio file to transcribe
 # gcs_uri = "gs://cloud-samples-data/speech/brooklyn_bridge.raw"
-with io.open("english.wav", "rb") as f:
+with io.open("japanese.wav", "rb") as f:
     wav_data = f.read()
 
 audio = speech.RecognitionAudio(content=wav_data)
@@ -17,7 +17,7 @@ audio = speech.RecognitionAudio(content=wav_data)
 config = speech.RecognitionConfig(
     encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
     sample_rate_hertz=8000,
-    language_code="en-US",
+    language_code="ja-JP",
 )
 
 # Detects speech in the audio file
