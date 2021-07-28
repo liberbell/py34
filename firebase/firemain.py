@@ -28,5 +28,6 @@ doc_ref = db.collection('users').document(u'alovelace')
 doc_ref.set({
     'first_name': 'Elton',
     'last_name': 'Jhon',
+    'nickname': 'both',
     'age': 1815
 })
