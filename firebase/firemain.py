@@ -19,4 +19,6 @@ for doc in docs:
     users.append(doc.to_dict())
     print(f'{doc.id} => {doc.to_dict()}')
 
-print(users)
+# print(users)
+df = pd.DataFrame(users)
+print(df)
