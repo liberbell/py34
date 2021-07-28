@@ -24,9 +24,12 @@ for doc in docs:
 df = pd.DataFrame(data=users, index=indexes)
 print(df)
 
-db.collection('users').add({
-    'first_name': 'Elton',
-    'last_name': 'Jhon',
-    'nickname': 'both',
-    'age': 72
-})
+# db.collection('users').add({
+#     'first_name': 'Elton',
+#     'last_name': 'Jhon',
+#     'nickname': 'both',
+#     'age': 72
+# })
+
+city_ref = db.collection('users').document('elton')
+city_ref.update({'age': 74})
