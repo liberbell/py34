@@ -16,6 +16,7 @@ docs = users_ref.stream()
 users = []
 indexes = []
 for doc in docs:
-    users.append(doc.to_dict(()))
+    users.append(doc.to_dict())
     print(f'{doc.id} => {doc.to_dict()}')
 
+print(users)
