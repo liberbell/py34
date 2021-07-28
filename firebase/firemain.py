@@ -29,5 +29,5 @@ doc_ref.set({
     'first_name': 'Elton',
     'last_name': 'Jhon',
     'nickname': 'both',
-    'age': 1815
+    'age': 72
 })
