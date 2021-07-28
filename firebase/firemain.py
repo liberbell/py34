@@ -32,4 +32,7 @@ print(df)
 # })
 
 city_ref = db.collection('users').document('elton')
-city_ref.update({'age': 74})
+city_ref.update({
+    'age': 74,
+    'nickname': "pianist"
+    })
