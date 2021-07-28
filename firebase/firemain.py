@@ -23,3 +23,10 @@ for doc in docs:
 # print(users)
 df = pd.DataFrame(data=users, index=indexes)
 print(df)
+
+doc_ref = db.collection('users').document(u'alovelace')
+doc_ref.set({
+    'first_name': 'Elton',
+    'last_name': 'Jhon',
+    'age': 1815
+})
