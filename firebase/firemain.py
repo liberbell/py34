@@ -24,8 +24,7 @@ for doc in docs:
 df = pd.DataFrame(data=users, index=indexes)
 print(df)
 
-doc_ref = db.collection('users').document('elton')
-doc_ref.set({
+db.collection('users').add({
     'first_name': 'Elton',
     'last_name': 'Jhon',
     'nickname': 'both',
