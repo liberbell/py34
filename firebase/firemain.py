@@ -37,7 +37,7 @@ print(df)
 #     'nickname': "pianist"
 #     })
 
-user_ref = db.collection('cities').document(u'BJ')
+user_ref = db.collection('users').document('elton')
 user_ref.update({
-    'capital': firestore.DELETE_FIELD
+    'nickname': firestore.DELETE_FIELD
 })
