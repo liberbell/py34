@@ -14,3 +14,5 @@ docs = users_ref.stream()
 
 for doc in docs:
     print(f'{doc.id} => {doc.to_dict()}')
+
+print(list(docs))
