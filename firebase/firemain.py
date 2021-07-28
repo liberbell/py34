@@ -21,5 +21,5 @@ for doc in docs:
     print(f'{doc.id} => {doc.to_dict()}')
 
 # print(users)
-df = pd.DataFrame(users)
+df = pd.DataFrame(data=users, index=indexes)
 print(df)
