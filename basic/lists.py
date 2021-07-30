@@ -10,3 +10,6 @@ print(names[1:])
 scores = [40, 30, 20]
 scores.append(50)
 print(scores)
+
+scores.pop()
+print(scores)
