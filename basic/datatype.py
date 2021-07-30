@@ -21,3 +21,7 @@ print(type(flg))
 d = [10, 20, 30]
 print(d)
 print(type(d))
+
+e = {"abc", "def"}
+print(e)
+print(type(e))
