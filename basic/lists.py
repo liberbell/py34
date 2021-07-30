@@ -13,3 +13,6 @@ print(scores)
 
 scores.pop()
 print(scores)
+
+scores.pop(0)
+print(scores)
