@@ -1,0 +1,1 @@
+scores = {"math": 30, "science": 40}
