@@ -9,3 +9,7 @@ print(type(b))
 c = 3j
 print(c)
 print(type(c))
+
+name = "田中"
+print(name)
+print(type(name))
