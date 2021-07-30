@@ -13,3 +13,7 @@ print(type(c))
 name = "田中"
 print(name)
 print(type(name))
+
+flg = True
+print(flg)
+print(type(flg))
