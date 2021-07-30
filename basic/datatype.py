@@ -17,3 +17,7 @@ print(type(name))
 flg = True
 print(flg)
 print(type(flg))
+
+d = [10, 20, 30]
+print(d)
+print(type(d))
