@@ -25,3 +25,6 @@ print(type(d))
 e = {}
 print(e)
 print(type(e))
+
+f = ()
+print(type(f))
