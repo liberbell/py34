@@ -8,3 +8,5 @@ print(scores)
 print(type(scores))
 
 print(scores["math"])
+scores["physics": 100]
+print(scores)
