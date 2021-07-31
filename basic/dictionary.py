@@ -10,3 +10,6 @@ print(type(scores))
 print(scores["math"])
 scores["physics"] = 100
 print(scores)
+
+scores.pop("physics")]
+print(scores)
