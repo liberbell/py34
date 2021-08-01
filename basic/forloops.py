@@ -4,4 +4,5 @@ print(names[0] + "!")
 print(names[1] + "!")
 
 for i in range(len(names)): 
-    print(i)
+    # print(i)
+    print(names[i] + "!")
