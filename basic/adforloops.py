@@ -10,7 +10,7 @@ for i in range(len(last_names)):
     print(last_names[i] + " " + first_names[i] + "!")
 
 for i in range(len(last_names)):
-    print("ID " + i + "rd member is" + last_names[i] + "!" )
+    print("ID ", i, "rd member is" + " " + last_names[i] + "!" )
 
 # for index, last_name in enumerate(last_names):
 #     print("ID is ", index, )
