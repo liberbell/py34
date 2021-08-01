@@ -1,5 +1,5 @@
-first_names = ["elton", "bob", "jhon", "george", "eric"]
-last_name = ["jhon", "mary", "lenon", "harison", "clapton"]
+last_names = ["elton", "bob", "jhon", "george", "eric"]
+first_name = ["jhon", "mary", "lenon", "harison", "clapton"]
 
 full_names = []
 for last_names, first_names in zip(last_name, first_names):
