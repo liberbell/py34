@@ -13,4 +13,4 @@ for i in range(len(last_names)):
     print("ID ", i, "rd member is" + " " + last_names[i] + "!")
 
 for index, last_name in enumerate(last_names):
-    print("ID ", i, "rd member is" + " " + last_names[i] + "!. by enumerate")
+    print("ID ", index, "rd member is" + " " + last_names[index] + "!. by enumerate")
