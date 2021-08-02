@@ -5,3 +5,4 @@ class Person:
         self.nationarity = nationarity
 
 tom = Person("eric", 72, "England")
+print(tom.age)
