@@ -6,4 +6,5 @@ class Person:
 
 eric = Person("eric", 72, "England")
 bob = Person("bob", 59, "cuba")
-print(tom.age)
+print(eric.age)
+print(bob.nationarity)
