@@ -3,3 +3,5 @@ class Person:
         self.name = name
         self.age = age
         self.nationarity = nationarity
+
+tom = Person("eric", 72, "England")
