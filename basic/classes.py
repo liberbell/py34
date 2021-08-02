@@ -4,5 +4,6 @@ class Person:
         self.age = age
         self.nationarity = nationarity
 
-tom = Person("eric", 72, "England")
+eric = Person("eric", 72, "England")
+bob = Person("bob", 59, "cuba")
 print(tom.age)
