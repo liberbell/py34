@@ -11,3 +11,5 @@ eric = Person("eric", 72, "England")
 bob = Person("bob", 59, "cuba")
 print(eric.age)
 print(bob.nationarity)
+
+print(eric.say_hello())
