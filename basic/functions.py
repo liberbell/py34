@@ -8,8 +8,8 @@ def calc_square(side):
     result = side * side
     return result
 
-def calc_tri(side, high):
-    return (side * high) / 2
+def calc_tri(side, height):
+    return (side * height) / 2
 
 say_hello()
 say_hello2("tom")
