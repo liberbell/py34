@@ -13,3 +13,4 @@ print(eric.age)
 print(bob.nationarity)
 
 eric.say_hello()
+bob.say_hello()
