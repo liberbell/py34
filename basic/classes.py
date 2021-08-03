@@ -5,7 +5,7 @@ class Person:
         self.nationarity = nationarity
 
     def __call__(self, name):
-        print("Mr.{0}. Hello World by class. I am {1}".format(name, self.name))
+        print("Mr.{0}. Hello World by class call. I am {1}".format(name, self.name))
 
     def say_hello(self, name):
         print("Mr.{0}. Hello World by class. I am {1}".format(name, self.name))
