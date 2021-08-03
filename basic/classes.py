@@ -5,7 +5,7 @@ class Person:
         self.nationarity = nationarity
 
     def say_hello(self):
-        print("Hello World")
+        print("Hello World by class.")
 
 eric = Person("eric", 72, "England")
 bob = Person("bob", 59, "cuba")
