@@ -4,8 +4,8 @@ class Person:
         self.age = age
         self.nationarity = nationarity
 
-    def say_hello(self):
-        print("Hello World by class. I am {0}".format(self.name))
+    def say_hello(self, name):
+        print("Mr.{0}.Hello World by class. I am {1}".format(name, self.name))
 
 eric = Person("eric", 72, "England")
 bob = Person("bob", 59, "cuba")
