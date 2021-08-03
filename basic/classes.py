@@ -12,4 +12,4 @@ bob = Person("bob", 59, "cuba")
 print(eric.age)
 print(bob.nationarity)
 
-print(eric.say_hello())
+eric.say_hello()
