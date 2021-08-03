@@ -1,3 +1,3 @@
 import datetime
 
-print(datetime.date.Now())
+print(datetime.date.today())
