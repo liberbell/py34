@@ -17,4 +17,5 @@ df = pd.DataFrame([
 print(df)
 
 df = pd.read_csv("housing.csv")
-print(df)
+print(df.head)
+print(df.iloc[: ,2:])
