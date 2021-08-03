@@ -4,7 +4,7 @@ class Person:
         self.age = age
         self.nationarity = nationarity
 
-    def say_hello():
+    def say_hello(self):
         print("Hello World")
 
 eric = Person("eric", 72, "England")
