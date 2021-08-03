@@ -17,3 +17,6 @@ print(bob.nationarity)
 
 eric.say_hello("mari")
 bob.say_hello("mari")
+
+eric.__call__("mari")
+bob.__call__("mari")
