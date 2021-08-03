@@ -5,3 +5,4 @@ print(today.month)
 print(datetime.datetime.now())
 
 print(today - datetime.timedelta(days=1))
+print(today.strftime("%Y%m%d"))
