@@ -22,4 +22,4 @@ print(df.iloc[: ,2:])
 
 print(df[df["housing_median_age"] > 30])
 print(df.shape)
-print(df.mean)
+print(df.mean())
